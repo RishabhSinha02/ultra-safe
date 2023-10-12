@@ -82,7 +82,7 @@ const OurServices = () => {
                   <img src="/img/community.svg" alt="image" className="h-60 w-full p-12" />
                   <div className="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
                     <h3>
-                      <a href="javascript:void(0)" className="
+                      <a href="/" className="
                         font-semibold
                         text-dark text-xl
                         sm:text-[22px]
@@ -121,7 +121,7 @@ const OurServices = () => {
                 <img src="/img/tips.svg" alt="image" className="h-60 w-full p-4" />
                   <div className="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
                     <h3>
-                      <a href="javascript:void(0)" className="
+                      <a href="/" className="
                         font-semibold
                         text-dark text-xl
                         sm:text-[22px]
@@ -160,7 +160,7 @@ const OurServices = () => {
                 <img src="/img/report.svg" alt="image" className="h-60 w-full p-4" />
                   <div className="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
                     <h3>
-                      <a href="javascript:void(0)" className="
+                      <a href="/" className="
                         font-semibold
                         text-dark text-xl
                         sm:text-[22px]

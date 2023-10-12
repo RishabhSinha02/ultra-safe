@@ -1,5 +1,6 @@
 "use client";
 import Chat from "./components/chat";
+import Navbar from "./components/navbar";
 import { useState } from "react";
 
 export default function Home() {
@@ -15,22 +16,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen">
-      <nav className="bg-white px-24 py-2 flex justify-between">
-        <div className="flex items-center">
-          <img className="nav-logo h-16" src="/img/logo.png" />
-        </div>
-        <ul className="flex font-sans items-center space-x-11 py-3 px-48">
-          <li>Home</li>
-          <li>Services</li>
-          <li>About Us</li>
-          <li>Contact</li>
-        </ul>
-        <div className="flex justify-center items-center">
-          <button className="py-2 px-5 border rounded-xl bg-gray-600 text-white border-white hover:bg-orange-600">
-            Sign Up
-          </button>
-        </div>
-      </nav>
+      <Navbar />
       <div className="upper-body bg-gray-200 p-4">
         <div className="main-body flex m-24">
           <div className="home-body flex-1">
@@ -45,9 +31,10 @@ export default function Home() {
               environments for occupants.
             </div>
             <div className="home-body-get-staeted mt-8">
-              <button className="button bg-orange-400 hover:bg-orange-600 text-white font-bold p-4 px-8 rounded-xl">
+              <a href="/chat-with-AI"><button className="button bg-orange-400 hover:bg-orange-600 text-white font-bold p-4 px-8 rounded-xl">
                 Get Start
               </button>
+              </a>
             </div>
           </div>
           <div className="body-img">
@@ -113,7 +100,7 @@ const OurServices = () => {
                     <p className="text-base text-justify text-body-color leading-relaxed mb-7">
                     Our community forum provides a platform for discussing fire safety topics, sharing experiences, and connecting with others interested in fire safety. It fosters a sense of community and knowledge sharing.
                    </p>
-                    <a href="javascript:void(0)" className="
+                    <a href="/community" className="
                      inline-block
                      py-2
                      px-7
@@ -124,7 +111,7 @@ const OurServices = () => {
                      hover:border-orange-500 hover:bg-orange-500 hover:text-white
                      transition
                      ">
-                      View Details
+                      View
                     </a>
                   </div>
                 </div>
@@ -152,7 +139,7 @@ const OurServices = () => {
                     <p className="text-base text-justify text-body-color leading-relaxed mb-7">
                     We offer valuable fire-related tips and guidance to help individuals and organizations prevent fires and respond effectively in case of emergencies. These tips cover various aspects of fire safety.
                     </p>
-                    <a href="javascript:void(0)" className="
+                    <a href="/tip" className="
                      inline-block
                      py-2
                      px-7
@@ -163,7 +150,7 @@ const OurServices = () => {
                      hover:border-orange-500 hover:bg-orange-500 hover:text-white
                      transition
                      ">
-                      View Details
+                      View
                     </a>
                   </div>
                 </div>
@@ -191,7 +178,7 @@ const OurServices = () => {
                     <p className="text-base text-body-color text-justify leading-relaxed mb-7">
                     In the event of a fire incident, our service enables users to report the incident promptly and efficiently. This reporting system can help in emergency response for analysis and prevention.
                     </p>
-                    <a href="javascript:void(0)" className="
+                    <a href="/report" className="
                      inline-block
                      py-2
                      px-7
@@ -202,7 +189,7 @@ const OurServices = () => {
                      hover:border-orange-500 hover:bg-orange-500 hover:text-white
                      transition
                      ">
-                      View Details
+                      Report
                     </a>
                   </div>
                 </div>
@@ -232,7 +219,7 @@ const Tutorial = () => {
   </div>
   <div className="absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-full ">
     <div className="relative z-20 video rounded-2xl">
-      <iframe className="rounded-2xl" allow='autoplay' width="560" height="315" src="https://www.youtube.com/embed/Q3LDGOFxJAE?si=9cR_qC1Ni4kyWFC_?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe className="rounded-2xl" width="560" height="315" src="https://www.youtube.com/embed/Q3LDGOFxJAE?si=9cR_qC1Ni4kyWFC_?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
   </div>
 </aside>

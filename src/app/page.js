@@ -57,7 +57,9 @@ export default function Home() {
       </div>
 
       <div className="our-services bg-white p-8">
-
+        <div className="service-upper text-4xl font-bold p-8">
+          Our Services
+        </div>
       </div>
 
       {/* CHatbot Button  */}

@@ -26,7 +26,7 @@ const Chat = () => {
     {isChatboxOpen ?
     <div className="fixed bottom-16 right-4 w-96">
       <div className="bg-white shadow-md rounded-lg max-w-lg w-full">
-        <div className="p-4 border-b bg-orange-500 text-white rounded-t-lg flex justify-between items-center">
+        <div className="p-4 border-b bg-gray-500 text-white rounded-t-lg flex justify-between items-center">
           <p className="text-lg font-semibold">Expert Bot</p>
           <button id="close-chat" className="text-gray-300 hover:text-gray-400 focus:outline-none focus:text-white" onClick={handleCloseChatbox}>
             <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -38,12 +38,12 @@ const Chat = () => {
           <div className="overflow-y-auto">
           {messages.map((message, index) => (
             <div className={`mb-2 ${message.user ? "text-right" : ""}`} key={index}>
-              <p className="bg-orange-500 text-white rounded-lg py-2 px-4 inline-block">{message.message}</p>
+              <p className="bg-orange-200 rounded-lg py-2 px-4 inline-block">{message.message}</p>
             </div>
           ))}
           {responseMessages.map((message, index) => (
             <div className={`mb-2 ${message.user ? "text-right" : ""}`} key={index}>
-              <p className="rounded-lg py-2 px-4 inline-block">{message.message}</p>
+              <p className="border border-orange-200 rounded-lg py-2 px-4 inline-block">{message.message}</p>
             </div>
           ))}
           </div>

@@ -220,7 +220,15 @@ const Tutorial = () => {
   return(
     <div className="tutorial bg-gray-200 p-8">
       <div className="tutorial-upper text-4xl font-bold p-8 mx-8">
-        Tutorial
+        Tutorials
+      </div>
+      <div className="video mt-4 mx-60">
+      <div class="aspect-w-16 aspect-h-9">
+      <iframe className="video rounded-2xl" width="560" height="315" src="https://www.youtube.com/embed/Q3LDGOFxJAE?si=9cR_qC1Ni4kyWFC_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+      </div>
+      <div className="tutorial-sub text-xl mt-12 mx-16">
+      Our safety tips service provides essential guidelines and recommendations to enhance safety in various settings. These tips cover a wide range of safety topics, including fire safety, to help individuals and organizations minimize risks and ensure the well-being of occupants and employees.
       </div>
       
     </div>

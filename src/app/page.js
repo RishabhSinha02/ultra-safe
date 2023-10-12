@@ -31,7 +31,7 @@ export default function Home() {
           </button>
         </div>
       </nav>
-      <div className="upper-body bg-gray-200 p-8">
+      <div className="upper-body bg-gray-200 p-4">
         <div className="main-body flex m-24">
           <div className="home-body flex-1">
             <div className="content text-6xl font-bold mr-52">
@@ -56,11 +56,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="our-services bg-white p-8">
-        <div className="service-upper text-4xl font-bold p-8">
-          Our Services
-        </div>
-      </div>
+      <OurServices />
+      <Tutorial />
 
       {/* CHatbot Button  */}
       <div className="flex flex-col justify-center items-center">
@@ -75,3 +72,157 @@ export default function Home() {
     </main>
   );
 }
+
+
+
+
+const OurServices = () => {
+  return (
+    <div className="our-services bg-white p-8">
+      <div className="service-upper text-4xl font-bold p-8 mx-8">
+        Our Services
+      </div>
+
+      <div>
+        <link rel="stylesheet" href="https://cdn.tailgrids.com/tailgrids-fallback.css" />
+        {/* ====== Cards Section Start */}
+          <div className="container">
+            <div className="flex flex-wrap -mx-4">
+              <div className="w-full md:w-1/2 xl:w-1/3 px-4">
+                <div className="bg-gray-100 rounded-lg overflow-hidden mb-10 text-center">
+                  <img src="/img/community.svg" alt="image" className="h-60 w-full p-12" />
+                  <div className="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
+                    <h3>
+                      <a href="javascript:void(0)" className="
+                        font-semibold
+                        text-dark text-xl
+                        sm:text-[22px]
+                        md:text-xl
+                        lg:text-[22px]
+                        xl:text-xl
+                        2xl:text-[22px]
+                        mb-4
+                        block
+                        hover:text-primary
+                        ">
+                        Community Forum
+                      </a>
+                    </h3>
+                    <p className="text-base text-justify text-body-color leading-relaxed mb-7">
+                    Our community forum provides a platform for discussing fire safety topics, sharing experiences, and connecting with others interested in fire safety. It fosters a sense of community and knowledge sharing.
+                   </p>
+                    <a href="javascript:void(0)" className="
+                     inline-block
+                     py-2
+                     px-7
+                     border border-[#000000]
+                     rounded-full
+                     text-base text-body-color
+                     font-medium
+                     hover:border-orange-500 hover:bg-orange-500 hover:text-white
+                     transition
+                     ">
+                      View Details
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full md:w-1/2 xl:w-1/3 px-4">
+                <div className="bg-gray-100 rounded-lg overflow-hidden mb-10">
+                <img src="/img/tips.svg" alt="image" className="h-60 w-full p-4" />
+                  <div className="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
+                    <h3>
+                      <a href="javascript:void(0)" className="
+                        font-semibold
+                        text-dark text-xl
+                        sm:text-[22px]
+                        md:text-xl
+                        lg:text-[22px]
+                        xl:text-xl
+                        2xl:text-[22px]
+                        mb-4
+                        block
+                        hover:text-primary
+                        ">
+                        Fire-Related Tips
+                      </a>
+                    </h3>
+                    <p className="text-base text-justify text-body-color leading-relaxed mb-7">
+                    We offer valuable fire-related tips and guidance to help individuals and organizations prevent fires and respond effectively in case of emergencies. These tips cover various aspects of fire safety.
+                    </p>
+                    <a href="javascript:void(0)" className="
+                     inline-block
+                     py-2
+                     px-7
+                     border border-[#000000]
+                     rounded-full
+                     text-base text-body-color
+                     font-medium
+                     hover:border-orange-500 hover:bg-orange-500 hover:text-white
+                     transition
+                     ">
+                      View Details
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full md:w-1/2 xl:w-1/3 px-4">
+                <div className="bg-gray-100 rounded-lg overflow-hidden mb-10">
+                <img src="/img/report.svg" alt="image" className="h-60 w-full p-4" />
+                  <div className="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
+                    <h3>
+                      <a href="javascript:void(0)" className="
+                        font-semibold
+                        text-dark text-xl
+                        sm:text-[22px]
+                        md:text-xl
+                        lg:text-[22px]
+                        xl:text-xl
+                        2xl:text-[22px]
+                        mb-4
+                        block
+                        hover:text-primary
+                        ">
+                        Report the Incident
+                      </a>
+                    </h3>
+                    <p className="text-base text-body-color text-justify leading-relaxed mb-7">
+                    In the event of a fire incident, our service enables users to report the incident promptly and efficiently. This reporting system can help in emergency response for analysis and prevention.
+                    </p>
+                    <a href="javascript:void(0)" className="
+                     inline-block
+                     py-2
+                     px-7
+                     border border-[#000000]
+                     rounded-full
+                     text-base text-body-color
+                     font-medium
+                     hover:border-orange-500 hover:bg-orange-500 hover:text-white
+                     transition
+                     ">
+                      View Details
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        {/* ====== Cards Section End */}
+      </div>
+    </div>
+
+  );
+};
+
+
+
+const Tutorial = () => {
+  return(
+    <div className="tutorial bg-gray-200 p-8">
+      <div className="tutorial-upper text-4xl font-bold p-8 mx-8">
+        Tutorial
+      </div>
+      
+    </div>
+  );
+};

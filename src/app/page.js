@@ -51,7 +51,7 @@ export default function Home() {
             </div>
           </div>
           <div className="body-img">
-            <img className="nav-logo h-96" src="/img/ultrasafe-home.webp" />
+            <img className="nav-logo h-96" src="/img/home-gif.gif" />
           </div>
         </div>
       </div>

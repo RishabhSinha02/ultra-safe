@@ -58,6 +58,8 @@ export default function Home() {
 
       <OurServices />
       <Tutorial />
+      <Footer />
+
 
       {/* CHatbot Button  */}
       <div className="flex flex-col justify-center items-center">
@@ -219,18 +221,100 @@ const OurServices = () => {
 const Tutorial = () => {
   return(
     <div className="tutorial bg-gray-200 p-8">
-      <div className="tutorial-upper text-4xl font-bold p-8 mx-8">
+      <div className="tutorial-upper text-4xl font-bold mx-16 mt-8">
         Tutorials
       </div>
-      <div className="video mt-4 mx-60">
-      <div class="aspect-w-16 aspect-h-9">
-      <iframe className="video rounded-2xl" width="560" height="315" src="https://www.youtube.com/embed/Q3LDGOFxJAE?si=9cR_qC1Ni4kyWFC_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
-      </div>
-      <div className="tutorial-sub text-xl mt-12 mx-16">
+      <aside className="relative overflow-hidden text-black rounded-lg sm:mx-16 mx-2 sm:py-16 mb-8">
+  <div className="relative z-10 max-w-screen-xl px-4 sm:py-24 mx-auto sm:px-6 lg:px-8">
+    <div className="max-w-xl sm:mt-1 mt-80 space-y-8 text-justify font-medium text-lg sm:ml-auto">
       Our safety tips service provides essential guidelines and recommendations to enhance safety in various settings. These tips cover a wide range of safety topics, including fire safety, to help individuals and organizations minimize risks and ensure the well-being of occupants and employees.
-      </div>
+    </div>
+  </div>
+  <div className="absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-full ">
+    <div className="relative z-20 video rounded-2xl">
+      <iframe className="rounded-2xl" allow='autoplay' width="560" height="315" src="https://www.youtube.com/embed/Q3LDGOFxJAE?si=9cR_qC1Ni4kyWFC_?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
+</aside>
       
+    </div>
+  );
+};
+
+const Footer = () => {
+  return(
+    <div className="footer">
+      <div>
+        {/* <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css" /> */}
+        <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" />
+        <footer className="relative pt-8 pb-6">
+          <div className="container mx-auto px-4">
+            <div className="flex flex-wrap text-left lg:text-left">
+              <div className="w-full lg:w-6/12 px-4">
+                <h4 className="text-3xl fonat-semibold text-blueGray-700">Let's keep in touch!</h4>
+                <h5 className="text-lg mt-0 mb-2 text-blueGray-600">
+                  Find us on any of these platforms, we respond 1-2 business days.
+                </h5>
+                <div className="mt-6 lg:mb-0 mb-6">
+                  <button className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                    <i className="fab fa-twitter" /></button><button className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                    <i className="fab fa-facebook-square" /></button><button className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                    <i className="fab fa-dribbble" /></button><button className="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                    <i className="fab fa-github" />
+                  </button>
+                </div>
+              </div>
+              <div className="w-full lg:w-6/12 px-4">
+                <div className="flex flex-wrap items-top mb-6">
+                  <div className="w-full lg:w-4/12 px-4 ml-auto">
+                    <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Useful Links</span>
+                    <ul className="list-unstyled">
+                      <li>
+                        <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/presentation?ref=njs-profile">About Us</a>
+                      </li>
+                      <li>
+                        <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://blog.creative-tim.com?ref=njs-profile">Blog</a>
+                      </li>
+                      <li>
+                        <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.github.com/creativetimofficial?ref=njs-profile">Github</a>
+                      </li>
+                      <li>
+                        <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/bootstrap-themes/free?ref=njs-profile">Free Products</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="w-full lg:w-4/12 px-4">
+                    <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Other Resources</span>
+                    <ul className="list-unstyled">
+                      <li>
+                        <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile">MIT License</a>
+                      </li>
+                      <li>
+                        <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/terms?ref=njs-profile">Terms &amp; Conditions</a>
+                      </li>
+                      <li>
+                        <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/privacy?ref=njs-profile">Privacy Policy</a>
+                      </li>
+                      <li>
+                        <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/contact-us?ref=njs-profile">Contact Us</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr className="my-6 border-blueGray-300" />
+            <div className="flex flex-wrap items-center md:justify-between justify-center">
+              <div className="w-full md:w-4/12 px-4 mx-auto text-center">
+                <div className="text-sm text-blueGray-500 font-semibold py-1">
+                  Copyright © <span id="get-current-year">2021</span><a href="/" className="text-blueGray-500 hover:text-gray-800" target="_blank"> ULTRA SAFE
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
   );
 };

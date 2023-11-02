@@ -23,6 +23,8 @@ const Chat = () => {
 
   const generateChatbotResponse = (userMessage) => {
     const predefinedQA = {
+      "Hello": "Hello, how can I help you?",
+      "hii": "Hello, how can I help you?",
       "What is a fire extinguisher?":
         "A fire extinguisher is a crucial safety device for putting out small fires.",
       "How does a fire extinguisher work?":

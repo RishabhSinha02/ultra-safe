@@ -21,18 +21,14 @@ export default function Home() {
         <div className="main-body flex flex-wrap m-8 md:m-24">
           <div className="home-body md:flex-1">
             <div className="content md:text-6xl text-3xl font-bold">
-              Ultra Safe: AI-Powered Fire Safety Solutions
+            Empower Your Fire Safety Journey with our AI Chatbot
             </div>
             <div className="sub-cotent md:mr-52 mt-8">
-              Ultra Safe is a cutting-edge fire safety consultancy that
-              leverages AI-powered chatbots to enhance fire safety in building
-              and factory construction. Our services help construction companies
-              ensure fire safety compliance, reduce risks, and create safer
-              environments for occupants.
+            Welcome to Ultra Safe's Fire Safety AI Chatbot – your virtual companion on the path to a safer workplace. Whether you're an industry professional, safety enthusiast, or just seeking essential information, our AI chatbot is here to provide instant, accurate, and personalized responses to all your fire safety queries.
             </div>
             <div className="home-body-get-staeted mt-8">
               <a href="/chat-with-AI"><button className="button bg-orange-400 hover:bg-orange-600 text-white font-bold p-4 px-8 rounded-xl">
-                Get Start
+                Comming Soon <progress className="progress"></progress>
               </button>
               </a>
             </div>
@@ -51,10 +47,10 @@ export default function Home() {
       {/* CHatbot Button  */}
       <div className="flex flex-col justify-center items-center">
         <button
-          className="fixed bottom-0 right-0 mb-4 mr-4 bg-gray-500 text-white py-2 px-4 rounded-md hover:bg-gray-600 transition duration-300"
+          className="fixed bottom-0 right-0 mb-4 mr-4 bg-gray-500 text-white py-2 px-4 rounded-3xl hover:bg-gray-600 transition duration-300"
           onClick={handleOpenChatbox}
         >
-          Chat with Expert
+        Chat with AI
         </button>
         {isChatboxOpen && <Chat />}
       </div>

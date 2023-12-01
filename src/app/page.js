@@ -68,21 +68,21 @@ export default function Home() {
 const OurServices = () => {
   return (
     <div className="our-services bg-white p-8">
-      <div className="service-upper text-4xl font-bold p-8 mx-8">
+      <div className="service-upper text-4xl font-bold md:p-8 p-4 md:mx-8">
         Our Services
       </div>
 
       <div>
         <link rel="stylesheet" href="https://cdn.tailgrids.com/tailgrids-fallback.css" />
         {/* ====== Cards Section Start */}
-          <div className="container">
-            <div className="flex flex-wrap -mx-4">
-              <div className="w-full md:w-1/2 xl:w-1/3 px-4">
-                <div className="bg-gray-100 rounded-lg overflow-hidden mb-10 text-center">
-                  <img src="/img/community.svg" alt="image" className="h-60 w-full p-12" />
-                  <div className="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
-                    <h3>
-                      <a href="/" className="
+        <div className="container">
+          <div className="flex flex-wrap -mx-4">
+            <div className="w-full md:w-1/2 xl:w-1/3 px-4">
+              <div className="bg-gray-100 rounded-lg overflow-hidden mb-10 text-center">
+                <img src="/img/community.svg" alt="image" className="h-60 w-full p-12" />
+                <div className="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
+                  <h3>
+                    <a href="/" className="
                         font-semibold
                         text-dark text-xl
                         sm:text-[22px]
@@ -94,13 +94,13 @@ const OurServices = () => {
                         block
                         hover:text-primary
                         ">
-                        Community Forum
-                      </a>
-                    </h3>
-                    <p className="text-base text-justify text-body-color leading-relaxed mb-7">
+                      Community Forum
+                    </a>
+                  </h3>
+                  <p className="text-base text-justify text-body-color leading-relaxed mb-7">
                     Our community forum provides a platform for discussing fire safety topics, sharing experiences, and connecting with others interested in fire safety. It fosters a sense of community and knowledge sharing.
-                   </p>
-                    <a href="/community" className="
+                  </p>
+                  <a href="/community" className="
                      inline-block
                      py-2
                      px-7
@@ -111,17 +111,17 @@ const OurServices = () => {
                      hover:border-orange-500 hover:bg-orange-500 hover:text-white
                      transition
                      ">
-                      View
-                    </a>
-                  </div>
+                    View
+                  </a>
                 </div>
               </div>
-              <div className="w-full md:w-1/2 xl:w-1/3 px-4">
-                <div className="bg-gray-100 rounded-lg overflow-hidden mb-10">
+            </div>
+            <div className="w-full md:w-1/2 xl:w-1/3 px-4">
+              <div className="bg-gray-100 rounded-lg overflow-hidden mb-10">
                 <img src="/img/tips.svg" alt="image" className="h-60 w-full p-4" />
-                  <div className="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
-                    <h3>
-                      <a href="/" className="
+                <div className="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
+                  <h3>
+                    <a href="/" className="
                         font-semibold
                         text-dark text-xl
                         sm:text-[22px]
@@ -133,13 +133,13 @@ const OurServices = () => {
                         block
                         hover:text-primary
                         ">
-                        Fire-Related Tips
-                      </a>
-                    </h3>
-                    <p className="text-base text-justify text-body-color leading-relaxed mb-7">
+                      Fire-Related Tips
+                    </a>
+                  </h3>
+                  <p className="text-base text-justify text-body-color leading-relaxed mb-7">
                     We offer valuable fire-related tips and guidance to help individuals and organizations prevent fires and respond effectively in case of emergencies. These tips cover various aspects of fire safety.
-                    </p>
-                    <a href="/tip" className="
+                  </p>
+                  <a href="/tip" className="
                      inline-block
                      py-2
                      px-7
@@ -150,17 +150,17 @@ const OurServices = () => {
                      hover:border-orange-500 hover:bg-orange-500 hover:text-white
                      transition
                      ">
-                      View
-                    </a>
-                  </div>
+                    View
+                  </a>
                 </div>
               </div>
-              <div className="w-full md:w-1/2 xl:w-1/3 px-4">
-                <div className="bg-gray-100 rounded-lg overflow-hidden mb-10">
+            </div>
+            <div className="w-full md:w-1/2 xl:w-1/3 px-4">
+              <div className="bg-gray-100 rounded-lg overflow-hidden mb-10">
                 <img src="/img/report.svg" alt="image" className="h-60 w-full p-4" />
-                  <div className="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
-                    <h3>
-                      <a href="/" className="
+                <div className="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
+                  <h3>
+                    <a href="/" className="
                         font-semibold
                         text-dark text-xl
                         sm:text-[22px]
@@ -172,13 +172,13 @@ const OurServices = () => {
                         block
                         hover:text-primary
                         ">
-                        Report the Incident
-                      </a>
-                    </h3>
-                    <p className="text-base text-body-color text-justify leading-relaxed mb-7">
+                      Report the Incident
+                    </a>
+                  </h3>
+                  <p className="text-base text-body-color text-justify leading-relaxed mb-7">
                     In the event of a fire incident, our service enables users to report the incident promptly and efficiently. This reporting system can help in emergency response for analysis and prevention.
-                    </p>
-                    <a href="/report" className="
+                  </p>
+                  <a href="/report" className="
                      inline-block
                      py-2
                      px-7
@@ -189,13 +189,13 @@ const OurServices = () => {
                      hover:border-orange-500 hover:bg-orange-500 hover:text-white
                      transition
                      ">
-                      Report
-                    </a>
-                  </div>
+                    Report
+                  </a>
                 </div>
               </div>
             </div>
           </div>
+        </div>
         {/* ====== Cards Section End */}
       </div>
     </div>
@@ -206,30 +206,25 @@ const OurServices = () => {
 
 
 const Tutorial = () => {
-  return(
+  return (
     <div className="tutorial bg-gray-200 p-8">
-      <div className="tutorial-upper text-4xl font-bold mx-16 mt-8">
+      <div className="tutorial-upper text-4xl font-bold md:mx-16 mx-4 mt-8">
         Tutorials
       </div>
-      <aside className="relative overflow-hidden text-black rounded-lg sm:mx-16 mx-2 sm:py-16 mb-8">
-  <div className="relative z-10 max-w-screen-xl px-4 sm:py-24 mx-auto sm:px-6 lg:px-8">
-    <div className="max-w-xl sm:mt-1 mt-80 space-y-8 text-justify font-medium text-lg sm:ml-auto">
-      Our safety tips service provides essential guidelines and recommendations to enhance safety in various settings. These tips cover a wide range of safety topics, including fire safety, to help individuals and organizations minimize risks and ensure the well-being of occupants and employees.
-    </div>
-  </div>
-  <div className="absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-full ">
-    <div className="relative z-20 video rounded-2xl">
-      <iframe className="rounded-2xl" width="50%" height="315" src="https://www.youtube.com/embed/Q3LDGOFxJAE?si=9cR_qC1Ni4kyWFC_?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-  </div>
-</aside>
-      
+      <div className="flex flex-wrap">
+        <div className="relative z-20 video rounded-2xl">
+          <iframe className="rounded-2xl md:h-56 md:w-96 origin-center m-4 md:mx-12" src="https://www.youtube.com/embed/Q3LDGOFxJAE?si=9cR_qC1Ni4kyWFC_?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div className="md:w-2/5 m-4">
+          Our safety tips service provides essential guidelines and recommendations to enhance safety in various settings. These tips cover a wide range of safety topics, including fire safety, to help individuals and organizations minimize risks and ensure the well-being of occupants and employees.
+        </div>
+      </div>
     </div>
   );
 };
 
 const Footer = () => {
-  return(
+  return (
     <div className="footer">
       <div>
         {/* <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css" /> */}

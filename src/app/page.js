@@ -18,12 +18,12 @@ export default function Home() {
     <main className="min-h-screen">
       <Navbar />
       <div className="upper-body bg-gray-200 p-4">
-        <div className="main-body flex m-24">
-          <div className="home-body flex-1">
-            <div className="content text-6xl font-bold mr-52">
+        <div className="main-body flex flex-wrap m-8 md:m-24">
+          <div className="home-body md:flex-1">
+            <div className="content md:text-6xl text-3xl font-bold">
               Ultra Safe: AI-Powered Fire Safety Solutions
             </div>
-            <div className="sub-cotent mr-52 mt-8">
+            <div className="sub-cotent md:mr-52 mt-8">
               Ultra Safe is a cutting-edge fire safety consultancy that
               leverages AI-powered chatbots to enhance fire safety in building
               and factory construction. Our services help construction companies
@@ -38,7 +38,7 @@ export default function Home() {
             </div>
           </div>
           <div className="body-img">
-            <img className="nav-logo h-96" src="/img/home-gif.gif" />
+            <img className="nav-logo md:h-96" src="/img/home-gif.gif" />
           </div>
         </div>
       </div>
@@ -219,7 +219,7 @@ const Tutorial = () => {
   </div>
   <div className="absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-full ">
     <div className="relative z-20 video rounded-2xl">
-      <iframe className="rounded-2xl" width="560" height="315" src="https://www.youtube.com/embed/Q3LDGOFxJAE?si=9cR_qC1Ni4kyWFC_?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe className="rounded-2xl" width="50%" height="315" src="https://www.youtube.com/embed/Q3LDGOFxJAE?si=9cR_qC1Ni4kyWFC_?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
   </div>
 </aside>
